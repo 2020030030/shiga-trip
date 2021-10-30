@@ -1,24 +1,39 @@
-# README
+#shiga-trip
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+滋賀県に関する旅を紹介。誰でも簡単に旅行記を投稿できます。たくさん滋賀のいいトコを共有し合いましょう！
 
-Things you may want to cover:
+### サイトテーマ
+誰もが簡単に手軽に思い出を共有し残しておけるサイト
 
-* Ruby version
+### テーマを選んだ理由
+今まで滋賀県出身と話すと「琵琶湖しかないじゃん」と何度も言われてきました。
+私はとても滋賀県が大好きで本当にいい所なのに良さが知られていないのがとても悔しく、自分の力で滋賀県の良さを存分に伝える事ができたら素敵だなと思い今回このテーマを選びました。
 
-* System dependencies
 
-* Configuration
+### ターゲットユーザ
+・旅行好きな人
+・滋賀県を知らない人
+・滋賀県が好きな人
+・様々な年代の人
 
-* Database creation
+### 主な利用シーン
+・誰かと共有したい時
+・思い出に残したい時
 
-* Database initialization
+## 設計書
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## チャレンジ要素一覧
+<https://docs.google.com/spreadsheets/d/1Kzcve53buh5z2jEenhQvIzlqh70sTcbjD0Hlu3JzSmg/edit?usp=sharing>
 
-* Deployment instructions
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby
+- フレームワーク：Ruby on Rails,Bootstrap
+- JSライブラリ：jQuery
+- IDE：Cloud9
 
-* ...
+## 使用素材
+- 外部サービスの画像素材・音声素材を使用した場合は、必ずサービス名とURLを明記してください。
+- 使用しない場合は、使用素材の項目をREADMEから削除してください。
