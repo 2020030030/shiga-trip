@@ -1,0 +1,23 @@
+
+
+    <div class="card my-5 mx-auto" style="width: 20rem">
+     <h5 class="mb-4 mt-4" style ="text-align:center" >新規投稿</h5>
+      <%= form_with model: @post_image, local:true do |f| %>
+      <div class="card-body">
+        <h6 class="card-title">1.画像選択</h6>
+        <%= f.attachment_field :image %></br>
+      </div>
+      <div class="card-body">
+       <h6 class="card-title"><%= f.label :genre, "2.市町選択" %></h6>
+       <%= f.collection_select :prefecture_id, Prefecture.all, :id, :name, {prompt:"選択してください"}, {class:""} %>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">3.コメントを書こう!</h6>
+        <%= f.text_area :caption , size:"30x5"%>
+      </div>
+      <div style = "text-align:center">
+        <%= f.submit '投稿' , class: 'btn btn-outline-dark'%>
+    </div></br>
+
+      <% end %>
+

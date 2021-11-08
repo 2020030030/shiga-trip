@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+ @import "bootstrap";
+ @import 'font-awesome-sprockets';
+ @import 'font-awesome';
+
+ .search-form{
+  margin-left: 70%;
+ }

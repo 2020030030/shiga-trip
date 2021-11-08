@@ -1,0 +1,4 @@
+class PostGenreRelation < ApplicationRecord
+
+
+end
