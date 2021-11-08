@@ -12,7 +12,7 @@ class PostImagesController < ApplicationController
 
   def index
     @post_images = PostImage.page(params[:page]).reverse_order
-    @post_image = PostImage.new
+    # @post_image = Prefecture.find(params[:id])
   end
 
   def show
@@ -29,7 +29,7 @@ class PostImagesController < ApplicationController
   private
 
   def post_image_params
-    params.require(:post_image).permit(:image, :caption)
+    params.require(:post_image).permit(:image, :caption,:prefecture_id,:name)
   end
 
 end

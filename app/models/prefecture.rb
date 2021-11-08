@@ -7,4 +7,8 @@ class Prefecture < ActiveHash::Base
       {id: 13, name: '豊郷町'}, {id: 14, name: '甲良町'}, {id: 15, name: '多賀町'},
       {id: 16, name: '米原市'}, {id: 17, name: '長浜市'}, {id: 18, name: '高島市'},
   ]
+
+  include ActiveHash::Associations
+  has_many :post_image
+
 end

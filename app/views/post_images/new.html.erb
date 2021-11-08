@@ -8,7 +8,7 @@
         <%= f.attachment_field :image %></br>
       </div>
       <div class="card-body">
-       <h6 class="card-title"><%= f.label :genre, "2.市町選択" %></h6>
+       <h6 class="card-title"><%= f.text_field :name "2.市町選択" %></h6>
        <%= f.collection_select :prefecture_id, Prefecture.all, :id, :name, {prompt:"選択してください"}, {class:""} %>
       </div>
       <div class="card-body">
