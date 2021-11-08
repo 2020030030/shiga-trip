@@ -1,24 +1,41 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# shiga-trip
 
-Things you may want to cover:
+## サイト概要
+滋賀県に関する旅を紹介。誰でも簡単に旅行記を投稿できます。たくさん滋賀のいいトコを共有し合いましょう！
+みんなで共有しやすいように他人の投稿にいいねやコメントもできるようになっています。
+そして、市を選択して投稿するようになっており滋賀県を知らない人でも市ごとで検索する事も可能なので、エリアを絞りやすくなっております。
 
-* Ruby version
+### サイトテーマ
+誰もが簡単に手軽に思い出を共有し残しておけるサイト
 
-* System dependencies
+### テーマを選んだ理由
+今まで滋賀県出身と話すと「琵琶湖しかないじゃん」と何度も言われてきました。
+私はとても滋賀県が大好きで本当にいい所なのに良さが知られていないのがとても悔しく、自分の力で滋賀県の良さを存分に伝える事ができたら素敵だなと思い今回このテーマを選びました。
+また、コロナの影響で県外から滋賀に来る人がとても増えたように見られてのですが、やはりみんな行くところが固まってしまってるような印象を受けました。そういう時にこのサイトを使ってもらえたら、穴場も簡単に調べる事ができ、人も分散され滋賀県の利益も分散されるんじゃないかなと考えています。
 
-* Configuration
 
-* Database creation
+### ターゲットユーザ
+・旅行好きな人
+・滋賀県を知らない人
+・滋賀県が好きな人
+・様々な年代の人
 
-* Database initialization
+### 主な利用シーン
+・誰かと共有したい時
+・思い出に残したい時
 
-* How to run the test suite
+## 設計書
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## チャレンジ要素一覧
+<https://docs.google.com/spreadsheets/d/1Kzcve53buh5z2jEenhQvIzlqh70sTcbjD0Hlu3JzSmg/edit?usp=sharing>
 
-* ...
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby
+- フレームワーク：Ruby on Rails,Bootstrap
+- JSライブラリ：jQuery
+- IDE：Cloud9
+
+
