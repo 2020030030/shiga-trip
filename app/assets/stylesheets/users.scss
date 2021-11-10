@@ -2,5 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .table {
-  margin: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.table2 {
+  background:#ffff00;
+  margin: 5px auto;
 }

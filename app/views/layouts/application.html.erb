@@ -22,6 +22,10 @@
 
           <% if user_signed_in? %>
             <li>
+              <%= link_to 'みんなの投稿', post_images_path, class: 'nav-link text-dark' %>
+            </li>
+
+            <li>
               <%= link_to '投稿フォーム', new_post_image_path, class: 'nav-link text-dark' %>
             </li>
 
