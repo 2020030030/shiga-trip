@@ -1,3 +1,4 @@
+
 <div class="card-list-container py-5">
   <% @post_images.each do |post_image| %>
   <div class="card w-50 mx-auto mt-4 shadow-lg">
@@ -6,16 +7,17 @@
     <% end %>
     <div class="card-body">
       <div class="row">
-       <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', fallback: "no_image.jpg" %>
-       <p class="card-text mt-3"><%= post_image.caption %></p>
-       </div>
-       <div class="col-10">
-       <span>
+        <div class="col-2">
+         <%= attachment_image_tag post_image.user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg", class:"mt-4 rounded-circle"; %>
+        </div>
+        <div class="col-10">
+         <p class="card-text mt-4 ml-5"><%= post_image.caption %></p>
+         <p class="text-right">
          <i class="fas fa-user"></i> By <%= post_image.user.name %> ｜
          <%= link_to "#{post_image.post_comments.count} コメント", post_image_path(post_image.id) %>  |
          <i class="fas fa-map-pin"></i><%= post_image.prefecture.name %>
-
-       </span>
+         </p>
+        </div>
       </div>
     </div>
   </div>

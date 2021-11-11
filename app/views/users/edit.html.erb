@@ -1,20 +1,19 @@
+<div class="card my-5 mx-auto" style="width: 20rem">
+  <h5 class="mb-4 mt-4" style ="text-align:center" >プロフィール編集</h5>
+   <%= form_with model:@user, local:true do |f| %>
+   <div class="card-body">
+    <h6 class="card-title">Name :
+     <%= f.text_field :name, autofocus: true, id:"inputName", placeholder:"名前"%>
+    </h6>
+    <div>
+    <div class="card-body">
+     <%= attachment_image_tag @user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg"%>
+     <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
+    </div>
+    <div style = "text-align:center">
+     <%= f.submit "変更を保存" , class: 'btn btn-outline-dark'%>
+    </div>
+    <% end %>
 
-<link rel="stylesheet" href="users.scss">
-<div class='container'>
-  <div class='col-md-3'>
-    <h3>プロフィール編集</h3>
-    <hr>
-     <table class="table2" align= "center">
-      <%= form_with model:@user, local:true do |f| %>
-       <tr>Name</tr>
-         <%= f.text_field :name, autofocus: true, id:"inputName", placeholder:"名前"%>
-         <hr>
-         <%= attachment_image_tag @user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg"%>
-       <tr>ProfileImage</tr>
-         <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
-         <hr>
-          <%= f.submit "変更を保存" %>
-      <% end %>
-     </table>
-  </div>
-</div>
+   </div>
+ </div>
