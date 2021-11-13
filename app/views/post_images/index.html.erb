@@ -10,7 +10,7 @@
          <%= attachment_image_tag post_image.user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg", class:"mt-4 rounded-circle"; %>
         </div>
         <div class="col-10">
-         <p class="card-text mt-4 ml-5"><%= post_image.caption %></p>
+         <p class="card-text mt-4"><%= post_image.caption %></p>
          <p class="text-right">
          <i class="fas fa-user"></i> By <%= post_image.user.name %> ｜
          <%= link_to "#{post_image.post_comments.count} コメント", post_image_path(post_image.id) %>  |
@@ -20,7 +20,7 @@
       </div>
     </div>
   </div>
+  <% end %>
 </div>
 
-<% end %>
 <%= paginate @post_images %>

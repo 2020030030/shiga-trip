@@ -1,30 +1,29 @@
 
 <% if @target == 'user' %>
-<div align="center">
-<div class='col-md-3'>
+
 	<h3 style="padding: 30px">ユーザー検索結果 <%= @content %></h3>
-  <table class='table'>
-<% @records.each do |user| %>
-        <tr><%= attachment_image_tag(user, :profile_image, :fill, 50, 50, fallback: "no_image.jpg") %></tr>
-        <tr>
-         <th>name</th>
-         <th><%= user.name %></th>
-        </tr>
-        <tr>
-        <th>follows</th>
+<div class="profile-card">
+  <div class="profile-card__inner">
+    <% @records.each do |user| %>
+      <div class="profile-thumb">
+        <%= link_to attachment_image_tag(user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg"), user_path(user.id) %></tr>
+      </div>
+      <div class="profile-content">
+       <span class="profile-name"><%= user.name %></span>
+       <span class="profile-intro">
+         <th>follows</th>
          <th><%= user.followings.count %></th>
-        </tr>
-        <tr>
          <th>followers</th>
          <th><%= user.followers.count %></th>
-        </tr>
-    <% end %>
-  </table>
-</div>
+        <% end %>
+       </span>
+
+      </div>
+  </div>
 </div>
 <% elsif @target == 'prefecture' %>
 	<h3>市区町村検索結果 <%= @content %></h3>
-    <div class="card-list-container py-5">
+   <div class="card-list-container py-5">
      <% @records.each do |post_image| %>
      <div class="card w-50 mx-auto mt-4 shadow-lg">
       <%= link_to post_image_path(post_image.id) do %>
@@ -32,19 +31,21 @@
       <% end %>
       <div class="card-body">
        <div class="row">
+        <div class="col-2">
         <%= attachment_image_tag(post_image.user, :profile_image, :fill, 50, 50, fallback: "no_image.jpg") %>
-        <p class="card-text mt-3"><%= post_image.caption %></td>
-       </div>
-       <div class="col-10">
-        <span>
+        </div>
+        <div class="col-10">
+        <p class="card-text mt-4"><%= post_image.caption %></p>
+        <p class="text-right">
          <i class="fas fa-user"></i> By <%= post_image.user.name %> ｜
          <%= link_to "#{post_image.post_comments.count} コメント", post_image_path(post_image.id) %>  |
          <i class="fas fa-map-pin"></i><%= post_image.prefecture.name %>
-        </span>
+        </p>
+        </div>
        </div>
       </div>
      </div>
+     <% end %>
+   </div>
 </div>
-
-    <% end %>
 <% end %>
