@@ -25,17 +25,14 @@
 ・誰かと共有したい時
 ・思い出に残したい時
 
-## 設計書
-
 
 ## チャレンジ要素一覧
 <https://docs.google.com/spreadsheets/d/1Kzcve53buh5z2jEenhQvIzlqh70sTcbjD0Hlu3JzSmg/edit?usp=sharing>
 
 ## 開発環境
 - OS：Linux(CentOS)
-- 言語：HTML,CSS,JavaScript,Ruby
+- 言語：HTML,CSS,Ruby
 - フレームワーク：Ruby on Rails,Bootstrap
-- JSライブラリ：jQuery
 - IDE：Cloud9
 
 
