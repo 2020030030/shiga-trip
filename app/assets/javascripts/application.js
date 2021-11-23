@@ -14,7 +14,20 @@
 //= require popper
 //= require bootstrap-sprockets
 
+//= require jquery
+
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+  $(function() {
+    // 「#language-wrapper」にhoverしたときのhoverイベントを作成してください
+    $('#language-wrapper').hover(function() {
+        $('.language-text').fadeIn();
+      },
+      function() {
+        $('.language-text').fadeOut();
+      }
+    );
+  });
